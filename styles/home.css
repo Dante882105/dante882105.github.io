@@ -1,0 +1,75 @@
+#greeting{
+    height: 90%;
+    width: 100%;
+}
+
+#greeting>div{
+    padding-left: calc(100% / 10);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#greeting>div>div{
+    margin: 0;
+}
+
+#greeting>div>div>small{
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+#greeting>div>div>strong{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#greeting>div>div>h3, #greeting>div>div>h2, #greeting>div>div>h1{
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+#socialMedia{
+    height: 10%;
+    width: 100%;
+}
+
+#socialMedia>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+#socialMedia>ul>li{
+    margin: auto 10px;
+    font-size: 25px;
+}
+.dark #socialMedia>ul>li>div>a{
+    animation: glowingDark 5s linear infinite;
+}
+.ligth #socialMedia>ul>li>div>a{
+    animation: glowingLigth 5s linear infinite;
+}
+@keyframes glowingDark {
+    0%{
+        color: #ffffff;
+    }
+    50%{
+        color: #43485B;
+    }
+    100%{
+        color: #ffffff;
+    }
+}
+@keyframes glowingLigth {
+    0%{
+        color: #141D26
+    }
+    50%{
+        color: #9396A7;
+    }
+    100%{
+        color: #141D26;
+    }
+};

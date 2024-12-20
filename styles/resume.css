@@ -1,0 +1,219 @@
+@keyframes move_lefth {
+    0% { 
+        position: relative;
+        left: 10%;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes move_down{
+    0%{
+        position: relative;
+        bottom: 3%;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        bottom: 0%;
+        opacity: 1;    }
+}
+
+@keyframes move_rigth {
+    0% { 
+        position: relative;
+        right: 4%;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        right: 0%;
+        opacity: 1;
+    }
+}
+#resume{
+    width: 100%;
+    height: 93vh;
+    margin-top: 7vh;
+}
+#resume>div{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 10px;
+    height: 100%;
+}
+#resume>div>div h4{
+    text-align: center;
+}
+
+#skills, #experience{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Animations*/
+#lefth, #down, #rigth{
+    width: 80%;
+    margin: auto;
+}
+.move_lefth{
+    animation: move_rigth 2s ease-in-out;
+}
+.move_down{
+    animation: move_down 2s linear;
+}
+.move_rigth{
+    animation: move_lefth 2s ease-in-out;
+}
+#experience::-webkit-scrollbar, #education::-webkit-scrollbar, #skills::-webkit-scrollbar{
+    opacity: 0;
+    width: 2px;
+}
+#skills::-webkit-scrollbar-thumb,
+#experience::-webkit-scrollbar-thumb, #education::-webkit-scrollbar-thumb {
+    background-color: #5B5D72;
+    border-radius: 4px;
+    width: 1px;
+}
+/*skills*/
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    width: 100%;
+    height: 100%;
+}
+.container>div{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 30px;
+    width: 30px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+.status{
+    width: 30%;
+    padding-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.progress{
+    width: calc(100% - 30px - 30%);
+    border-radius: 10px;
+}
+.progress-bar{
+    height: 5px;
+    border-radius: 10px;
+    transition: width 4s ease-in-out;
+}
+/*Experience*/
+#experience{
+    height: 100%;
+}
+#experience>div>div>div>div{
+    font-weight: bolder;
+    margin: 15px auto;
+}
+
+/*Education*/
+#education{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#education>div>div>div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px;
+}
+#education .status{
+    margin-right: 10px;
+}
+
+#education .status>i{
+    font-size: 30px;
+}
+
+#other{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#other ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+}
+#other ul li{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.others{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: auto;
+}
+.others>i{
+    font-size: 30px;
+}
+#other ul li small{
+    font-size: 10px;
+}
+
+@media (max-width: 590px) {
+    #resume{
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    #resume>div{
+        grid-template-columns: auto;
+        grid-template-rows: 3fr 3fr 3fr;
+        gap: 10px;
+        display: block;
+    }
+    #skills, #experience, #education{
+        min-height: auto;
+        width: 85%;
+        margin: 25px auto;
+    }
+    #move_lefth, #move_down, #move_rigth{
+        width: 95%;
+        margin: 10px auto;
+    }
+}

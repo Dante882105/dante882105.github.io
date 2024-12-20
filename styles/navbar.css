@@ -1,0 +1,159 @@
+nav{
+    display: flex;
+    flex-direction: row;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    width: 100%;
+}
+#menu{
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: start;
+}
+#menu ul{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#menu ul li{
+    cursor: pointer;
+    width: 70px;
+    height: 100%;
+    margin: auto 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#menu ul li strong:hover{
+    animation: cambio 1s linear forwards;
+}
+.mode{
+    width: 120px;
+    height: 100%;
+}
+#burguer{
+    height: 100%;
+}
+#burguer_button{
+    position: absolute;
+    z-index: 15;
+    height: 6vh;
+    width: 50px;
+    opacity: 0.6;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#hamburguer-menu{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#hamburguer-menu>.menu{
+    height: calc(100vh - 11vh);
+    position: relative;
+    top: 6vh;
+    width: 100px;
+    padding-left: 5px;
+}
+#hamburguer-menu>.menu>ul{
+    margin: 0;
+    padding: 0;
+}
+#hamburguer-menu ul li{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin: 5px 0;
+}
+#hamburguer-menu ul li strong{
+    font-size: 20px;
+}
+
+#hamburguer-menu ul li small{
+    font-weight: bolder;
+    margin-left: 5px;
+}
+#hamburguer-menu>.mode{
+    width: 90%;
+    height: 5vh;
+}
+/*themes*/
+.mode, .cursor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide{
+    width: 40px;
+    height: 17px;
+    border-radius: 30px;
+    border: 1px solid;
+}
+.cursor{
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    border: 1px solid;
+    position: relative;
+    cursor: pointer;
+}
+.cursor>i{
+    font-size: 10px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.hide{
+    display: none !important;
+    height: 0 !important;
+}
+.show{
+    animation: appear .5s linear forwards;
+}
+.banisher{
+    animation: banish .5s linear forwards;
+}
+@keyframes cambio {
+    0%{
+        color: #5B5D72;
+    }
+    50%{
+        color: #9396A7;
+    }
+    100%{
+        color:aliceblue;
+    }
+}
+@keyframes banish {
+    0%{
+        position: absolute;
+        left: 0;
+    }
+    100%{
+        position: absolute;
+        left: -30%;
+    }
+}
+@keyframes appear {
+    0%{
+        position: absolute;
+        left: -30%;
+    }
+    100%{
+        position: absolute;
+        left: 0%;
+    }
+}

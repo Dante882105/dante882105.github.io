@@ -1,0 +1,171 @@
+*{
+    list-style: none;
+    font-family: 'Arial', 'sans-serif';
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+main{
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: content-box;
+}
+/*Ligth theme*/
+.ligth{
+    background-color: #9396A7;
+}
+
+.ligth main::-webkit-scrollbar{
+    background-color: #9396A7;
+    width: 8px;
+}
+.ligth main::-webkit-scrollbar-thumb{
+    background-color: #5B5D72;
+    border-radius: 4px;
+    width: 6px;
+}
+.ligth header #navbar, .ligth header #hamburguer-menu{
+    background-color: #5B5D72;
+}
+.ligth header #hamburguer-menu small{
+    color: #03080E;
+}
+.ligth .slide{
+    background-color: #5B5D72;
+    border: 1px solid #141D26;
+}
+.ligth .slide .cursor{
+    background-color: #141D26;
+}
+.ligth h1, .ligth h3{
+    color: #141D26;
+}
+.ligth h2, .ligth h4{
+    color: #43485B;
+}
+.ligth small{
+    color: #43485B;
+}
+.ligth strong{
+    color: #03080E
+}
+.ligth p{
+    color: #152E3E;
+}
+.ligth button{
+    background-color: #9396A7;
+    border-radius: 5px;
+}
+.ligth #home{
+    background-image: url(../imgs/wallpapers/homeImageligthjpg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.ligth .progress{
+    background-color: wheat;
+}
+.ligth .progress-bar{
+    background-color: #152E3E;
+}
+.ligth #education .status{
+    height: 60px;
+    width: 60px;
+    border: 2px solid;
+    border-radius: 90%;
+    border-color: #152E3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.ligth #education .status>i{
+    color: #152E3E;
+}
+.ligth .others{
+    border-color: #141D26;
+}
+.ligth .others>i{
+    color: #141D26;
+}
+/*Dark theme*/
+.dark{
+    background-color: #141D26;
+}
+.dark main::-webkit-scrollbar{
+    background-color: #141D26;
+    width: 8px;
+}
+.dark main::-webkit-scrollbar-thumb{
+    background-color: #03080E;
+    border-radius: 4px;
+    width: 6px;
+}
+.dark header #navbar, .dark header #hamburguer-menu{
+    background-color: #03080E;
+}
+.dark .slide{
+    background-color: #03080E;
+    border: 1px solid #5B5D72;
+}
+.dark .slide>.cursor{
+    background-color: #5B5D72;
+}
+.dark h1, .dark h3{
+    color: #9396A7
+} 
+.dark h2, .dark h4{
+    color: #5B5D72;
+}
+.dark small{
+    color: #5B5D72;
+}
+.dark strong{
+    color: #9396A7
+}
+.dark p{
+    color: #152E3E;
+}
+.dark button{
+    background-color: #152E3E;
+    border-radius: 5px;
+    color: #9396A7;
+}
+.dark #home{
+    background-image: url(../imgs/wallpapers/homeImagedark.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.dark .progress{
+    background-color: #03080E;
+}
+.dark .progress-bar{
+    background-color: #5B5D72;
+}
+.dark #education .status{
+    height: 60px;
+    width: 60px;
+    border: 2px solid;
+    border-radius: 90%;
+    border-color: #152E3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.dark #education .status>i{
+    color: #152E3E;
+}
+.dark .others{
+    border-color: #939393;
+}
+.dark .others>i{
+    color: #9396A7;
+}
