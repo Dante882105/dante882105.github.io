@@ -24,9 +24,10 @@ nav{
 }
 #menu ul li{
     cursor: pointer;
-    width: 70px;
+    width: auto;
     height: 100%;
-    margin: auto 5px;
+    margin: auto 10px;
+    padding-left: 5px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -144,7 +145,7 @@ nav{
     }
     100%{
         position: absolute;
-        left: -30%;
+        left: -33%;
     }
 }
 @keyframes appear {

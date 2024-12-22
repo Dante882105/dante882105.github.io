@@ -10,13 +10,13 @@ if(localStorage.getItem('theme')){
         body.className = 'ligth';
         for (let i = 0; i < button_theme.length; i++) {
             button_theme[i].style.left = "1px";
-            button_theme[i].children[0].className = "fa-solid fa-sun";
+            button_theme[i].children[0].className = "fa-solid fa-moon";
         }
     }if(theme === "dark"){
         body.className = 'dark';
         for (let i = 0; i < button_theme.length; i++) {
             button_theme[i].style.left = "23px";
-            button_theme[i].children[0].className = "fa-solid fa-moon";
+            button_theme[i].children[0].className = "fa-solid fa-sun";
         }
     }
 }else{
@@ -24,7 +24,7 @@ if(localStorage.getItem('theme')){
     body.className = 'dark';
         for (let i = 0; i < button_theme.length; i++) {
             button_theme[i].style.left = "23px";
-            button_theme[i].children[0].className = "fa-solid fa-moon";
+            button_theme[i].children[0].className = "fa-solid fa-sun";
         }
 };
 
@@ -35,13 +35,13 @@ for (let i = 0; i < button_theme.length; i++) {
 function changeTheme(data){
     let icon_button = data.children[0].className;
     let button = data;
-    if(icon_button === "fa-solid fa-moon"){
-        data.children[0].className = "fa-solid fa-sun";
+    if(icon_button === "fa-solid fa-sun"){
+        data.children[0].className = "fa-solid fa-moon";
         data.style.left = "1px";
         localStorage.setItem("theme", "ligth");
         body.className = 'ligth';
     }else{
-        data.children[0].className = "fa-solid fa-moon";
+        data.children[0].className = "fa-solid fa-sun";
         button.style.left = "23px";
         localStorage.setItem("theme", "dark");
         body.className = 'dark';
@@ -77,6 +77,7 @@ let list_menu = document.querySelectorAll('.menu_list');
 const SectionHome = document.getElementById('home');
 const SectionAbout = document.getElementById('about');
 const SectionResume = document.getElementById('resume');
+const SectionPortfolio = document.getElementById('portfolio');
 
 for (let y = 0; y < list_menu.length; y++) {
     
@@ -90,6 +91,9 @@ for (let y = 0; y < list_menu.length; y++) {
                     break;
                 case 'menu_list resume':
                     SectionResume.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    break;
+                case 'menu_list portfolio':
+                    SectionPortfolio.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     break;
             default:
                 break;

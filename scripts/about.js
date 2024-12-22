@@ -28,7 +28,7 @@ const observer = new IntersectionObserver((entries, observer) => {
                 entry.target.classList.add(targetAnimation.class); // Add animation
                 observer.unobserve(entry.target); // stop observsation
             }
-        }
+        };
     });
 }, { threshold: 0.1 }); // 10% Vidible to activate animations
 

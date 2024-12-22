@@ -78,7 +78,7 @@ function generates_skills(){
         setTimeout(()=>{
             progress_value.setAttribute('style',`width: ${Data.lenguages[i].percent}%`);
         }, 1000)
-};
+    };
 }
 
 //Visibility and animations to skills

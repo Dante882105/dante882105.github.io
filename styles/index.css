@@ -93,6 +93,12 @@ main{
 .ligth .others>i{
     color: #141D26;
 }
+.ligth #portfolio{
+    background-color:#5B5D72;
+}
+.ligth #galery>ul>li>div{
+    background-color: #9396A7;
+}
 /*Dark theme*/
 .dark{
     background-color: #141D26;
@@ -168,4 +174,16 @@ main{
 }
 .dark .others>i{
     color: #9396A7;
+}
+.dark #portfolio{
+    background-color: #03080E;
+}
+.dark #galery>ul>li>div{
+    background-color: #141D26;
+}
+/*responsive*/
+@media (max-width: 590px) {
+    main{
+        height: 100vh;
+    }
 }
