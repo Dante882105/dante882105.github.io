@@ -186,4 +186,10 @@ main{
     main{
         height: 100vh;
     }
+    .ligth #home{
+        height: 90%;
+    }
+    .dark #home{
+        height: 90%;
+    }
 }
