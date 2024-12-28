@@ -36,13 +36,17 @@ function changeTheme(data){
     let icon_button = data.children[0].className;
     let button = data;
     if(icon_button === "fa-solid fa-sun"){
+        data.classList.remove('slide_rigth');
         data.children[0].className = "fa-solid fa-moon";
         data.style.left = "1px";
+        data.classList.add('slide_lefth');
         localStorage.setItem("theme", "ligth");
         body.className = 'ligth';
     }else{
         data.children[0].className = "fa-solid fa-sun";
+        data.classList.remove('slide_lefth');
         button.style.left = "23px";
+        data.classList.add('slide_rigth');
         localStorage.setItem("theme", "dark");
         body.className = 'dark';
     }

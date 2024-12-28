@@ -22,12 +22,15 @@ const Sections = [Photo, TextSmall];
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+        const targetAnimation = ElementAndAnimation.find(obj => obj.element === entry.target);
         if (entry.isIntersecting) {
-            const targetAnimation = ElementAndAnimation.find(obj => obj.element === entry.target);
             if (targetAnimation) {
                 entry.target.classList.add(targetAnimation.class); // Add animation
-                observer.unobserve(entry.target); // stop observsation
+                //observer.unobserve(entry.target); // stop observsation
             }
+        }else {
+            // delete class to restart the animation
+            entry.target.classList.remove(targetAnimation.class);
         };
     });
 }, { threshold: 0.1 }); // 10% Vidible to activate animations

@@ -96,8 +96,8 @@ const Sections = [Lefth, Rigth, Down];
 
 const Observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+        const targetAnimation = ElementAndAnimation.find(obj => obj.element === entry.target);
         if (entry.isIntersecting) {
-            const targetAnimation = ElementAndAnimation.find(obj => obj.element === entry.target);
             if(targetAnimation) {
                 entry.target.classList.add(targetAnimation.class); // Add animation
                 observer.unobserve(entry.target); // stop observsation

@@ -116,6 +116,13 @@ nav{
     font-weight: bolder;
     color: aliceblue;
 }
+/*Animation slide to cursor*/
+.slide_lefth{
+    animation: slide_lefth 0.3s ease-in-out;
+}
+.slide_rigth{
+    animation: slide_rigth 0.3s ease-in-out;
+}
 
 .hide{
     display: none !important;
@@ -156,5 +163,21 @@ nav{
     100%{
         position: absolute;
         left: 0%;
+    }
+}
+@keyframes slide_lefth {
+    0%{
+        left: 23px;
+    }
+    100%{
+        left: 1px;
+    }
+}
+@keyframes slide_rigth {
+    0%{
+        left: 1px;
+    }
+    100%{
+        left: 23px;
     }
 }
