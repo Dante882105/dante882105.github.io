@@ -1,7 +1,7 @@
 'use strict';
 //Download curriculum 
 let downLoadPdf = document.querySelector('.download_cv').addEventListener('click', ()=>{
-    const PdfUrl = 'docs/Hojadevid.pdf';
+    const PdfUrl = 'docs/hojadevida.pdf';
     const Link = document.createElement('a');
     Link.href = PdfUrl;
     Link.download = 'HojadevidaDanielBernal2024.pdf';
