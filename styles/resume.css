@@ -209,11 +209,15 @@
     }
     #skills, #experience, #education{
         min-height: auto;
-        width: 85%;
+        width: 100%;
         margin: 25px auto;
     }
     #move_lefth, #move_down, #move_rigth{
         width: 95%;
         margin: 10px auto;
+    }
+    #lefth, #down, #rigth{
+        width: 95%;
+        margin: auto;
     }
 }

@@ -61,8 +61,8 @@ export const Data = {
         {
             "id": 8,
             "tecnology": "mysql",
-            "status": "Junior",
-            "percent": 25,
+            "status": "Intermediate",
+            "percent": 50,
             "url": "imgs/icons/Mysql.png"
         },
         {
