@@ -11,6 +11,13 @@ export const Data = {
         },
         {
             "id": 1,
+            "tecnology": "laravel",
+            "status": "Intermediate",
+            "percent": 50,
+            "url": "imgs/icons/laravel.png"
+        },
+        {
+            "id": 1,
             "tecnology": "javascript",
             "status": "Advanced",
             "percent": 75,
